@@ -199,11 +199,6 @@ def build_problem_benchmark_pairs(
     third field is a selected problem-level parameter candidate, if this
     requirement is generated from a parameter list in `req_para.json`.
     """
-    feature_benchmarks = sorted(
-        [name for name in benchmarks if name.startswith("feature_model_")],
-        key=lambda name: int(name.split("_")[-1]),
-    )
-
     test_case_benchmarks = dict.fromkeys(
         TEST_CASE_BENCHMARKS
         + config.get("IGDecQAOA_bench", [])
@@ -216,11 +211,6 @@ def build_problem_benchmark_pairs(
         for benchmark in test_case_benchmarks:
             if benchmark in benchmarks:
                 pairs.append((problem_name, benchmark, None))
-
-    for benchmark in feature_benchmarks:
-        pairs.append(("configuration_selection", benchmark, None))
-        for parameter_candidate in get_parameter_candidates("configuration_prioritization", req_parameters):
-            pairs.append(("configuration_prioritization", benchmark, parameter_candidate))
 
     return pairs
 

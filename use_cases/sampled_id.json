@@ -40,47 +40,5 @@
       "case_id": "req_17.txt",
       "size": 806
     }
-  ],
-  "configuration optimization": [
-    {
-      "case_id": "req_68.txt",
-      "size": 58
-    },
-    {
-      "case_id": "req_69.txt",
-      "size": 58
-    },
-    {
-      "case_id": "req_70.txt",
-      "size": 58
-    },
-    {
-      "case_id": "req_71.txt",
-      "size": 57
-    },
-    {
-      "case_id": "req_72.txt",
-      "size": 57
-    },
-    {
-      "case_id": "req_73.txt",
-      "size": 57
-    },
-    {
-      "case_id": "req_77.txt",
-      "size": 51
-    },
-    {
-      "case_id": "req_78.txt",
-      "size": 51
-    },
-    {
-      "case_id": "req_79.txt",
-      "size": 51
-    },
-    {
-      "case_id": "req_65.txt",
-      "size": 50
-    }
   ]
 }
