@@ -1,0 +1,227 @@
+﻿# User Requirement
+
+This is user requirement 60. 
+
+The agentic system should solve the software engineering optimization problem using quantum algorithms and generate the corresponding application.
+
+---
+
+## Problem Description
+
+The problem to be solved is configuration prioritization. 
+
+Its definition is as follows:
+
+  Definition of configuration prioritization:
+
+- **Given**:
+
+    - $FM$ attributed feature model is a set of $n \in \mathbb{N}$ features $FM = \{x_1, \cdots, x_n\}$ and each feature $x_i$ contains an attribute $a_i$ with $i \in [1,n]$
+    - $fc \subseteq FM$ a configuration is a set of selected features
+    - $C(fc): fc \mapsto r \in \mathbb{R}$ cost function calculating the cost $r$ of a configuration $fc$ over the attributes $a_j$ of features $\{x_j |x_j \in fc\}, j \le n$
+    - $m \in \mathbb{N}$ number of searched configurations
+
+- **Goal**:
+
+    Find the optimal sequence of $m$ valid configurations $[fc_{0}, \cdots,  fc_{m}]$ according to $FM$, in which configurations are sorted by optimality in accordance with $C(fc): C(fc_{i}) \le C(fc_{j}), i < j$, and $i, j \in [0,𝑚]$.
+
+---
+
+## Benchmark Instance
+
+The benchmark instance provides the specific input data for the problem. The data is presented in dictionary format. The keys represent the optimization objectives, and the values provide the corresponding data for those objectives. The agent should use this instance as the input for solving the optimization problem and generating the application.
+
+- The name of the benchmark instance is: feature_model_13.
+
+- Detailed instance data:
+
+  [
+  {
+    "name": "A1",
+    "cost": 74
+  },
+  {
+    "name": "A2",
+    "cost": 56
+  },
+  {
+    "name": "A3",
+    "cost": 87
+  },
+  {
+    "name": "C5",
+    "cost": 12
+  },
+  {
+    "name": "C6",
+    "cost": 10
+  },
+  {
+    "name": "C7",
+    "cost": 14
+  },
+  {
+    "name": "C8",
+    "cost": 99
+  },
+  {
+    "name": "A4",
+    "cost": 23
+  },
+  {
+    "name": "C10",
+    "cost": 36
+  },
+  {
+    "name": "C11",
+    "cost": 18
+  },
+  {
+    "name": "C12",
+    "cost": 88
+  },
+  {
+    "name": "C13",
+    "cost": 24
+  },
+  {
+    "name": "C14",
+    "cost": 99
+  },
+  {
+    "name": "A9",
+    "cost": 51
+  },
+  {
+    "name": "C15",
+    "cost": 86
+  },
+  {
+    "name": "C16",
+    "cost": 60
+  }
+]
+
+- Constraints (if any):
+
+  [
+  {
+    "id": 1,
+    "constraint": "A1"
+  },
+  {
+    "id": 2,
+    "constraint": "A1 or not A2"
+  },
+  {
+    "id": 3,
+    "constraint": "A2 or not A3"
+  },
+  {
+    "id": 4,
+    "constraint": "A3 or not A4"
+  },
+  {
+    "id": 5,
+    "constraint": "A3 or not C5"
+  },
+  {
+    "id": 6,
+    "constraint": "A3 or not C6"
+  },
+  {
+    "id": 7,
+    "constraint": "A3 or not C7"
+  },
+  {
+    "id": 8,
+    "constraint": "A3 or not C8"
+  },
+  {
+    "id": 9,
+    "constraint": "A4 or C5 or C6 or C7 or C8 or not A3"
+  },
+  {
+    "id": 10,
+    "constraint": "A4 or not A9"
+  },
+  {
+    "id": 11,
+    "constraint": "A4 or not C10"
+  },
+  {
+    "id": 12,
+    "constraint": "A4 or not C11"
+  },
+  {
+    "id": 13,
+    "constraint": "A4 or not C12"
+  },
+  {
+    "id": 14,
+    "constraint": "A4 or not C13"
+  },
+  {
+    "id": 15,
+    "constraint": "A4 or not C14"
+  },
+  {
+    "id": 16,
+    "constraint": "A9 or not C15"
+  },
+  {
+    "id": 17,
+    "constraint": "A9 or not C16"
+  },
+  {
+    "id": 18,
+    "constraint": "C16 or not A9"
+  },
+  {
+    "id": 19,
+    "constraint": "not A3 or not C6 or C7"
+  },
+  {
+    "id": 20,
+    "constraint": "A3 or C6 or C7"
+  },
+  {
+    "id": 21,
+    "constraint": "C10"
+  }
+]
+
+---
+
+## Optimization Target
+
+The optimization target is: 
+
+- Objective(s) to be maximized:
+
+  No specific objectives to maximize.
+
+- Objective(s) to be minimized:
+
+  * cost: The total feature cost of a selected valid configuration.
+
+- Weight: Each objective (either to be maximized or minimized) has an equal weight in optimization.
+
+When designing the optimization formulation, selecting the quantum algorithm, and generating the application, the agent should use this target together with the benchmark instance above.
+
+---
+
+## Parameter Settings
+
+The agent should consider the following parameter settings when solving the optimization problem and generating the application:
+
+  * Let the parameter $m$ for configuration prioritization be 1.
+  * When designing the penalty parameter, it can be chosen as the sum of all feature costs times 1.5.
+
+---
+
+## Output Format
+
+In addition to the generated application, the agent should provide a detailed report covering the following aspects:
+
+  No specific output formats required.

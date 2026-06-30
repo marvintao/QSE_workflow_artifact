@@ -1,0 +1,12 @@
+IGDecQAOA_bench: [
+  "gsdtsr", "iofrol", "paintcontrol", "sampled_paintcontrol"
+]
+SelectQA_bench: [
+  "flex", "grep", "gsdtsr", "gzip"
+]
+problem_name : [
+  "test case minimization", 
+  "test case selection", 
+  "configuration selection",
+  "configuration prioritization"
+]

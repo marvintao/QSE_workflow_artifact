@@ -1,0 +1,89 @@
+{
+    "paintcontrol":{
+        "minimize": {
+            "time": "How much time it was taken on average by a test case to execute"
+        },
+        "maximize": {
+            "rate": "The possibility of a test case failing based on the historical ratio of failures to the total number of test case executions"
+        }
+    },
+    "sampled_paintcontrol":{
+        "minimize": {
+            "time": "How much time it was taken on average by a test case to execute"
+        },
+        "maximize": {
+            "rate": "The possibility of a test case failing based on the historical ratio of failures to the total number of test case executions"
+        }
+    },
+    "iofrol":{
+        "minimize": {
+            "time": "How much time it was taken on average by a test case to execute"
+        },
+        "maximize": {
+            "rate": "The possibility of a test case failing based on the historical ratio of failures to the total number of test case executions"
+        }
+    },
+    "gsdtsr":{
+        "minimize": {
+            "time": "How much time it was taken on average by a test case to execute"
+        },
+        "maximize": {
+            "rate": "The possibility of a test case failing based on the historical ratio of failures to the total number of test case executions"
+        }
+    },
+    "elevator_o2": {
+        "minimize": {
+            "cost": "The execution cost"
+        },
+        "maximize": {
+            "input_div": "Test case input diversity"
+        }
+    },
+    "elevator_o3": {
+        "minimize": {
+            "cost": "The execution cost"
+        },
+        "maximize": {
+            "pcount": "The passenger counts",
+            "dist": "The travel distance in the elevator system"
+        }
+    },
+    "flex": {
+        "minimize": {
+            "execution_cost": "The cost is calculated by counting the executed elementary instructions."
+        },
+        "maximize": {
+            "statement_cov": "The possibility of a test case failing based on the historical ratio of failures to the total number of test case executions.",
+            "faults_cov": "The repository provides versions of the programs, each featuring injected faults, specifying through the use of a fault matrix, whether a given test case has detected errors in the past. This information is translated into a binary value associated with the corresponding test cases."
+        }
+    },
+    "grep": {
+        "minimize": {
+            "execution_cost": "The cost is calculated by counting the executed elementary instructions."
+        },
+        "maximize": {
+            "statement_cov": "The possibility of a test case failing based on the historical ratio of failures to the total number of test case executions.",
+            "faults_cov": "The repository provides versions of the programs, each featuring injected faults, specifying through the use of a fault matrix, whether a given test case has detected errors in the past. This information is translated into a binary value associated with the corresponding test cases."
+        }
+    },
+    "gzip": {
+        "minimize": {
+            "execution_cost": "The cost is calculated by counting the executed elementary instructions."
+        },
+        "maximize": {
+            "statement_cov": "The possibility of a test case failing based on the historical ratio of failures to the total number of test case executions.",
+            "faults_cov": "The repository provides versions of the programs, each featuring injected faults, specifying through the use of a fault matrix, whether a given test case has detected errors in the past. This information is translated into a binary value associated with the corresponding test cases."
+        }
+    },
+    "sed": {
+        "minimize": {
+            "execution_cost": "The cost is calculated by counting the executed elementary instructions."
+        },
+        "maximize": {
+            "statement_cov": "The possibility of a test case failing based on the historical ratio of failures to the total number of test case executions.",
+            "faults_cov": "The repository provides versions of the programs, each featuring injected faults, specifying through the use of a fault matrix, whether a given test case has detected errors in the past. This information is translated into a binary value associated with the corresponding test cases."
+        }
+    }
+}
+
+ 

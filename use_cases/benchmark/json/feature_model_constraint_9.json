@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "constraint": "A1"
+  },
+  {
+    "id": 2,
+    "constraint": "A1 or not C2"
+  },
+  {
+    "id": 3,
+    "constraint": "A1 or not C3"
+  },
+  {
+    "id": 4,
+    "constraint": "A1 or not C4"
+  },
+  {
+    "id": 5,
+    "constraint": "A1 or not C5"
+  },
+  {
+    "id": 6,
+    "constraint": "A1 or not C6"
+  },
+  {
+    "id": 7,
+    "constraint": "A1 or not A7"
+  },
+  {
+    "id": 8,
+    "constraint": "A1 or not C8"
+  },
+  {
+    "id": 9,
+    "constraint": "C2 or not A1"
+  },
+  {
+    "id": 10,
+    "constraint": "C3 or not A1"
+  },
+  {
+    "id": 11,
+    "constraint": "C4 or not A1"
+  },
+  {
+    "id": 12,
+    "constraint": "C5 or not A1"
+  },
+  {
+    "id": 13,
+    "constraint": "C6 or not A1"
+  },
+  {
+    "id": 14,
+    "constraint": "A7 or not A1"
+  },
+  {
+    "id": 15,
+    "constraint": "A7 or not C9"
+  },
+  {
+    "id": 16,
+    "constraint": "A7 or not C10"
+  },
+  {
+    "id": 17,
+    "constraint": "A7 or not C11"
+  },
+  {
+    "id": 18,
+    "constraint": "C9 or not A7"
+  },
+  {
+    "id": 19,
+    "constraint": "C10 or not A7"
+  },
+  {
+    "id": 20,
+    "constraint": "not A7 or not C2 or C4 or C9"
+  },
+  {
+    "id": 21,
+    "constraint": "A1 or not A7 or not C2 or C4"
+  }
+]

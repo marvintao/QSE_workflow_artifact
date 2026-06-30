@@ -1,0 +1,24 @@
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.mypy_cache/
+
+# Node / frontend
+node_modules/
+dist/
+*.log
+
+# Env / secrets
+.env
+.env.*
+
+# Large raw benchmark data (kept local only)
+use_cases/benchmark/original/

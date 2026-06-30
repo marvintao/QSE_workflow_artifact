@@ -1,0 +1,66 @@
+[
+  {
+    "name": "A1",
+    "cost": 74
+  },
+  {
+    "name": "A2",
+    "cost": 56
+  },
+  {
+    "name": "A3",
+    "cost": 87
+  },
+  {
+    "name": "C5",
+    "cost": 12
+  },
+  {
+    "name": "C6",
+    "cost": 10
+  },
+  {
+    "name": "C7",
+    "cost": 14
+  },
+  {
+    "name": "C8",
+    "cost": 99
+  },
+  {
+    "name": "A4",
+    "cost": 23
+  },
+  {
+    "name": "C10",
+    "cost": 36
+  },
+  {
+    "name": "C11",
+    "cost": 18
+  },
+  {
+    "name": "C12",
+    "cost": 88
+  },
+  {
+    "name": "C13",
+    "cost": 24
+  },
+  {
+    "name": "C14",
+    "cost": 99
+  },
+  {
+    "name": "A9",
+    "cost": 51
+  },
+  {
+    "name": "C15",
+    "cost": 86
+  },
+  {
+    "name": "C16",
+    "cost": 60
+  }
+]

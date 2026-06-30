@@ -1,0 +1,298 @@
+﻿# User Requirement
+
+This is user requirement 5. 
+
+The agentic system should solve the software engineering optimization problem using quantum algorithms and generate the corresponding application.
+
+---
+
+## Problem Description
+
+The problem to be solved is test case selection. 
+
+Its definition is as follows:
+
+  Definition of test case selection:
+
+Given a test suite $T = \{t_0, \cdots, t_{n−1}\}$ with a set of testing attributes for the software under test and the corresponding testing objectives $F = \{f_0, \cdots, f_{m−1}\}$, test case selection aims to select a subset $T' \in T$ to satisfy all objectives as much as possible. Each objective is associated with one of the attributes of the test cases.
+
+---
+
+## Benchmark Instance
+
+The benchmark instance provides the specific input data for the problem. The data is presented in dictionary format. The keys represent the optimization objectives, and the values provide the corresponding data for those objectives. The agent should use this instance as the input for solving the optimization problem and generating the application.
+
+- The name of the benchmark instance is: sampled_paintcontrol.
+
+- Detailed instance data:
+
+  [
+  {
+    "id": "t0",
+    "time": 1000.0,
+    "rate": 0.0962025316455696
+  },
+  {
+    "id": "t1",
+    "time": 47131.0,
+    "rate": 0.0956072351421188
+  },
+  {
+    "id": "t2",
+    "time": 39057.0,
+    "rate": 0.0736842105263157
+  },
+  {
+    "id": "t3",
+    "time": 24265.0,
+    "rate": 0.1679790026246719
+  },
+  {
+    "id": "t4",
+    "time": 21643.0,
+    "rate": 0.1989247311827957
+  },
+  {
+    "id": "t5",
+    "time": 19658.0,
+    "rate": 0.1825613079019073
+  },
+  {
+    "id": "t6",
+    "time": 8620.0,
+    "rate": 0.3005464480874317
+  },
+  {
+    "id": "t7",
+    "time": 11597.0,
+    "rate": 0.1890410958904109
+  },
+  {
+    "id": "t8",
+    "time": 43986.0,
+    "rate": 0.1895604395604395
+  },
+  {
+    "id": "t9",
+    "time": 15059.0,
+    "rate": 0.1900826446280991
+  },
+  {
+    "id": "t10",
+    "time": 45698.0,
+    "rate": 0.1845730027548209
+  },
+  {
+    "id": "t11",
+    "time": 41863.0,
+    "rate": 0.1943734015345268
+  },
+  {
+    "id": "t12",
+    "time": 18615.0,
+    "rate": 0.192200557103064
+  },
+  {
+    "id": "t13",
+    "time": 32818.0,
+    "rate": 0.2275449101796407
+  },
+  {
+    "id": "t14",
+    "time": 4465.0,
+    "rate": 0.2317073170731707
+  },
+  {
+    "id": "t15",
+    "time": 42389.0,
+    "rate": 0.2198142414860681
+  },
+  {
+    "id": "t16",
+    "time": 475631.0,
+    "rate": 0.6
+  },
+  {
+    "id": "t17",
+    "time": 25736.0,
+    "rate": 0.1318327974276527
+  },
+  {
+    "id": "t18",
+    "time": 36002.0,
+    "rate": 0.228125
+  },
+  {
+    "id": "t19",
+    "time": 5126.0,
+    "rate": 0.1331168831168831
+  },
+  {
+    "id": "t20",
+    "time": 38523.0,
+    "rate": 0.1456953642384106
+  },
+  {
+    "id": "t21",
+    "time": 27030.0,
+    "rate": 0.1490066225165563
+  },
+  {
+    "id": "t22",
+    "time": 15991.0,
+    "rate": 0.1414473684210526
+  },
+  {
+    "id": "t23",
+    "time": 2254.0,
+    "rate": 0.1521035598705501
+  },
+  {
+    "id": "t24",
+    "time": 9600.0,
+    "rate": 0.1414473684210526
+  },
+  {
+    "id": "t25",
+    "time": 28828.0,
+    "rate": 0.2347266881028939
+  },
+  {
+    "id": "t26",
+    "time": 32093.0,
+    "rate": 0.15359477124183
+  },
+  {
+    "id": "t27",
+    "time": 34657.0,
+    "rate": 0.1480263157894736
+  },
+  {
+    "id": "t28",
+    "time": 40509.0,
+    "rate": 0.1495016611295681
+  },
+  {
+    "id": "t29",
+    "time": 6719.0,
+    "rate": 0.1766666666666666
+  },
+  {
+    "id": "t30",
+    "time": 37720.0,
+    "rate": 0.1821192052980132
+  },
+  {
+    "id": "t31",
+    "time": 30219.0,
+    "rate": 0.1766666666666666
+  },
+  {
+    "id": "t32",
+    "time": 7798.0,
+    "rate": 0.1833333333333333
+  },
+  {
+    "id": "t33",
+    "time": 54721.0,
+    "rate": 1.0
+  },
+  {
+    "id": "t34",
+    "time": 3567.0,
+    "rate": 0.2382550335570469
+  },
+  {
+    "id": "t35",
+    "time": 13335.0,
+    "rate": 0.2297297297297297
+  },
+  {
+    "id": "t36",
+    "time": 15493.0,
+    "rate": 0.7272727272727273
+  },
+  {
+    "id": "t37",
+    "time": 10111.0,
+    "rate": 0.3172690763052209
+  },
+  {
+    "id": "t38",
+    "time": 22496.0,
+    "rate": 0.0448430493273542
+  },
+  {
+    "id": "t39",
+    "time": 44878.0,
+    "rate": 0.2784810126582278
+  },
+  {
+    "id": "t40",
+    "time": 50667.0,
+    "rate": 0.1964285714285714
+  },
+  {
+    "id": "t41",
+    "time": 126187.0,
+    "rate": 1.0
+  },
+  {
+    "id": "t42",
+    "time": 112842.0,
+    "rate": 0.0454545454545454
+  },
+  {
+    "id": "t43",
+    "time": 78821.0,
+    "rate": 0.6428571428571429
+  },
+  {
+    "id": "t44",
+    "time": 48599.0,
+    "rate": 0.2
+  },
+  {
+    "id": "t45",
+    "time": 57947.0,
+    "rate": 0.25
+  }
+]
+
+- Constraints (if any):
+
+  No specific constraints provided.
+
+---
+
+## Optimization Target
+
+The optimization target is: 
+
+- Objective(s) to be maximized:
+
+  * rate: The possibility of a test case failing based on the historical ratio of failures to the total number of test case executions
+
+- Objective(s) to be minimized:
+
+  * time: How much time it was taken on average by a test case to execute
+
+- Weight: Each objective (either to be maximized or minimized) has an equal weight in optimization.
+
+When designing the optimization formulation, selecting the quantum algorithm, and generating the application, the agent should use this target together with the benchmark instance above.
+
+---
+
+## Parameter Settings
+
+The agent should consider the following parameter settings when solving the optimization problem and generating the application:
+
+  No specific parameter settings provided.
+
+---
+
+## Output Format
+
+In addition to the generated application, the agent should provide a detailed report covering the following aspects:
+
+  No specific output formats required.

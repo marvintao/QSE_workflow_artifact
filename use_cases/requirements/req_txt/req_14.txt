@@ -1,0 +1,518 @@
+﻿# User Requirement
+
+This is user requirement 14. 
+
+The agentic system should solve the software engineering optimization problem using quantum algorithms and generate the corresponding application.
+
+---
+
+## Problem Description
+
+The problem to be solved is test case minimization. 
+
+Its definition is as follows:
+
+  Definition of test case minimization:
+
+Given a test suite $T = \{t_0, \cdots , t_{n−1}\}$ with a set of testing attributes for the software under test and the corresponding testing objectives, test case minimization aims to select minimum subset of test cases $T' \in T$ that satisfy all testing objectives as much as possible. The testing objectives $F = \{f_0, \cdots , f_{m−1}\}$ include ones associated with attributes of the test cases and the one specific objective aiming to minimize the size of $T'$, which makes test case minimization different from test case selection.
+
+---
+
+## Benchmark Instance
+
+The benchmark instance provides the specific input data for the problem. The data is presented in dictionary format. The keys represent the optimization objectives, and the values provide the corresponding data for those objectives. The agent should use this instance as the input for solving the optimization problem and generating the application.
+
+- The name of the benchmark instance is: paintcontrol.
+
+- Detailed instance data:
+
+  [
+  {
+    "id": "t0",
+    "time": 39050.0,
+    "rate": 0.13383838383838384
+  },
+  {
+    "id": "t1",
+    "time": 1000.0,
+    "rate": 0.09620253164556962
+  },
+  {
+    "id": "t2",
+    "time": 47131.0,
+    "rate": 0.09560723514211886
+  },
+  {
+    "id": "t3",
+    "time": 39057.0,
+    "rate": 0.07368421052631578
+  },
+  {
+    "id": "t4",
+    "time": 45758.0,
+    "rate": 0.21173469387755103
+  },
+  {
+    "id": "t5",
+    "time": 24265.0,
+    "rate": 0.1679790026246719
+  },
+  {
+    "id": "t6",
+    "time": 46944.0,
+    "rate": 0.208
+  },
+  {
+    "id": "t7",
+    "time": 45700.0,
+    "rate": 0.1783783783783784
+  },
+  {
+    "id": "t8",
+    "time": 21643.0,
+    "rate": 0.1989247311827957
+  },
+  {
+    "id": "t9",
+    "time": 45545.0,
+    "rate": 0.18528610354223432
+  },
+  {
+    "id": "t10",
+    "time": 19658.0,
+    "rate": 0.18256130790190736
+  },
+  {
+    "id": "t11",
+    "time": 8620.0,
+    "rate": 0.3005464480874317
+  },
+  {
+    "id": "t12",
+    "time": 38936.0,
+    "rate": 0.30434782608695654
+  },
+  {
+    "id": "t13",
+    "time": 11597.0,
+    "rate": 0.18904109589041096
+  },
+  {
+    "id": "t14",
+    "time": 43986.0,
+    "rate": 0.18956043956043955
+  },
+  {
+    "id": "t15",
+    "time": 15059.0,
+    "rate": 0.19008264462809918
+  },
+  {
+    "id": "t16",
+    "time": 45698.0,
+    "rate": 0.18457300275482094
+  },
+  {
+    "id": "t17",
+    "time": 42900.0,
+    "rate": 0.18232044198895028
+  },
+  {
+    "id": "t18",
+    "time": 11252.0,
+    "rate": 0.1883656509695291
+  },
+  {
+    "id": "t19",
+    "time": 2355.0,
+    "rate": 0.18888888888888888
+  },
+  {
+    "id": "t20",
+    "time": 2355.0,
+    "rate": 0.1888888888882089
+  },
+  {
+    "id": "t21",
+    "time": 15614.0,
+    "rate": 0.18662952646239556
+  },
+  {
+    "id": "t22",
+    "time": 42004.0,
+    "rate": 0.19220055710306408
+  },
+  {
+    "id": "t23",
+    "time": 41863.0,
+    "rate": 0.19437340153452684
+  },
+  {
+    "id": "t24",
+    "time": 18615.0,
+    "rate": 0.19220055710306408
+  },
+  {
+    "id": "t25",
+    "time": 6562.0,
+    "rate": 0.19382022471910113
+  },
+  {
+    "id": "t26",
+    "time": 42023.0,
+    "rate": 0.21714285714285714
+  },
+  {
+    "id": "t27",
+    "time": 41606.0,
+    "rate": 0.40762463343108507
+  },
+  {
+    "id": "t28",
+    "time": 32818.0,
+    "rate": 0.2275449101796407
+  },
+  {
+    "id": "t29",
+    "time": 4465.0,
+    "rate": 0.23170731707317074
+  },
+  {
+    "id": "t30",
+    "time": 42389.0,
+    "rate": 0.21981424148606812
+  },
+  {
+    "id": "t31",
+    "time": 475631.0,
+    "rate": 0.6
+  },
+  {
+    "id": "t32",
+    "time": 23941.0,
+    "rate": 0.22865853658536586
+  },
+  {
+    "id": "t33",
+    "time": 25736.0,
+    "rate": 0.13183279742765272
+  },
+  {
+    "id": "t34",
+    "time": 26157.0,
+    "rate": 0.13738019169329074
+  },
+  {
+    "id": "t35",
+    "time": 36002.0,
+    "rate": 0.228125
+  },
+  {
+    "id": "t36",
+    "time": 21587.0,
+    "rate": 0.13738019169329074
+  },
+  {
+    "id": "t37",
+    "time": 42085.0,
+    "rate": 0.13268608414239483
+  },
+  {
+    "id": "t38",
+    "time": 5126.0,
+    "rate": 0.1331168831168831
+  },
+  {
+    "id": "t39",
+    "time": 32833.0,
+    "rate": 0.1485148514851485
+  },
+  {
+    "id": "t40",
+    "time": 1844.0,
+    "rate": 0.1513157894736842
+  },
+  {
+    "id": "t41",
+    "time": 38523.0,
+    "rate": 0.1456953642384106
+  },
+  {
+    "id": "t42",
+    "time": 27030.0,
+    "rate": 0.1490066225165563
+  },
+  {
+    "id": "t43",
+    "time": 15991.0,
+    "rate": 0.14144736842105263
+  },
+  {
+    "id": "t44",
+    "time": 2254.0,
+    "rate": 0.15210355987055016
+  },
+  {
+    "id": "t45",
+    "time": 9600.0,
+    "rate": 0.14144736842105263
+  },
+  {
+    "id": "t46",
+    "time": 18316.0,
+    "rate": 0.17307692307692307
+  },
+  {
+    "id": "t47",
+    "time": 15420.0,
+    "rate": 0.15737704918032788
+  },
+  {
+    "id": "t48",
+    "time": 28828.0,
+    "rate": 0.2347266881028939
+  },
+  {
+    "id": "t49",
+    "time": 32093.0,
+    "rate": 0.15359477124183007
+  },
+  {
+    "id": "t50",
+    "time": 10053.0,
+    "rate": 0.15309446254071662
+  },
+  {
+    "id": "t51",
+    "time": 4175.0,
+    "rate": 0.14802631578947367
+  },
+  {
+    "id": "t52",
+    "time": 34657.0,
+    "rate": 0.14802631578947367
+  },
+  {
+    "id": "t53",
+    "time": 40509.0,
+    "rate": 0.14950166112956811
+  },
+  {
+    "id": "t54",
+    "time": 39443.0,
+    "rate": 0.1590909090909091
+  },
+  {
+    "id": "t55",
+    "time": 6719.0,
+    "rate": 0.17666666666666667
+  },
+  {
+    "id": "t56",
+    "time": 37720.0,
+    "rate": 0.18211920529801323
+  },
+  {
+    "id": "t57",
+    "time": 30219.0,
+    "rate": 0.17666666666666667
+  },
+  {
+    "id": "t58",
+    "time": 32564.0,
+    "rate": 0.17666666666666667
+  },
+  {
+    "id": "t59",
+    "time": 16185.0,
+    "rate": 0.1832797427652733
+  },
+  {
+    "id": "t60",
+    "time": 7798.0,
+    "rate": 0.18333333333333332
+  },
+  {
+    "id": "t61",
+    "time": 11110.0,
+    "rate": 0.18543046357615894
+  },
+  {
+    "id": "t62",
+    "time": 7606.0,
+    "rate": 0.1806020066889632
+  },
+  {
+    "id": "t63",
+    "time": 54721.0,
+    "rate": 1.0
+  },
+  {
+    "id": "t64",
+    "time": 10485.0,
+    "rate": 0.013157894736842105
+  },
+  {
+    "id": "t65",
+    "time": 7104.0,
+    "rate": 0.23
+  },
+  {
+    "id": "t66",
+    "time": 31554.0,
+    "rate": 0.23411371237458195
+  },
+  {
+    "id": "t67",
+    "time": 42270.0,
+    "rate": 0.24496644295302014
+  },
+  {
+    "id": "t68",
+    "time": 3567.0,
+    "rate": 0.23825503355704697
+  },
+  {
+    "id": "t69",
+    "time": 34981.0,
+    "rate": 0.23154362416107382
+  },
+  {
+    "id": "t70",
+    "time": 10056.0,
+    "rate": 0.24414715719063546
+  },
+  {
+    "id": "t71",
+    "time": 7976.0,
+    "rate": 0.24161073825503357
+  },
+  {
+    "id": "t72",
+    "time": 41012.0,
+    "rate": 0.24161073825503357
+  },
+  {
+    "id": "t73",
+    "time": 35769.0,
+    "rate": 0.22895622895622897
+  },
+  {
+    "id": "t74",
+    "time": 41660.0,
+    "rate": 0.23154362416107382
+  },
+  {
+    "id": "t75",
+    "time": 11878.0,
+    "rate": 0.22895622895622897
+  },
+  {
+    "id": "t76",
+    "time": 13335.0,
+    "rate": 0.22972972972972974
+  },
+  {
+    "id": "t77",
+    "time": 14507.0,
+    "rate": 0.23310810810810811
+  },
+  {
+    "id": "t78",
+    "time": 15493.0,
+    "rate": 0.7272727272727273
+  },
+  {
+    "id": "t79",
+    "time": 10111.0,
+    "rate": 0.3172690763052209
+  },
+  {
+    "id": "t80",
+    "time": 5035.0,
+    "rate": 0.24583333333333332
+  },
+  {
+    "id": "t81",
+    "time": 29406.0,
+    "rate": 0.7043010752688172
+  },
+  {
+    "id": "t82",
+    "time": 22496.0,
+    "rate": 0.04484304932735426
+  },
+  {
+    "id": "t83",
+    "time": 44878.0,
+    "rate": 0.27848101265822783
+  },
+  {
+    "id": "t84",
+    "time": 50667.0,
+    "rate": 0.19642857142857142
+  },
+  {
+    "id": "t85",
+    "time": 126187.0,
+    "rate": 1.0
+  },
+  {
+    "id": "t86",
+    "time": 112842.0,
+    "rate": 0.045454545454545456
+  },
+  {
+    "id": "t87",
+    "time": 78821.0,
+    "rate": 0.6428571428571429
+  },
+  {
+    "id": "t88",
+    "time": 48599.0,
+    "rate": 0.2
+  },
+  {
+    "id": "t89",
+    "time": 57947.0,
+    "rate": 0.25
+  }
+]
+
+- Constraints (if any):
+
+  No specific constraints provided.
+
+---
+
+## Optimization Target
+
+The optimization target is: 
+
+- Objective(s) to be maximized:
+
+  * rate: The possibility of a test case failing based on the historical ratio of failures to the total number of test case executions
+
+- Objective(s) to be minimized:
+
+  * time: How much time it was taken on average by a test case to execute
+
+- Weight: Each objective (either to be maximized or minimized) has an equal weight in optimization.
+
+When designing the optimization formulation, selecting the quantum algorithm, and generating the application, the agent should use this target together with the benchmark instance above.
+
+---
+
+## Parameter Settings
+
+The agent should consider the following parameter settings when solving the optimization problem and generating the application:
+
+  No specific parameter settings provided.
+
+---
+
+## Output Format
+
+In addition to the generated application, the agent should provide a detailed report covering the following aspects:
+
+  No specific output formats required.

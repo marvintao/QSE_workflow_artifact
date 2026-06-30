@@ -1,0 +1,482 @@
+{
+  "0": {
+    "problem": "test case selection",
+    "benchmark": "elevator_o2",
+    "constraint": "No",
+    "m_for_prioritization": null
+  },
+  "1": {
+    "problem": "test case selection",
+    "benchmark": "elevator_o3",
+    "constraint": "No",
+    "m_for_prioritization": null
+  },
+  "2": {
+    "problem": "test case selection",
+    "benchmark": "gsdtsr",
+    "constraint": "No",
+    "m_for_prioritization": null
+  },
+  "3": {
+    "problem": "test case selection",
+    "benchmark": "iofrol",
+    "constraint": "No",
+    "m_for_prioritization": null
+  },
+  "4": {
+    "problem": "test case selection",
+    "benchmark": "paintcontrol",
+    "constraint": "No",
+    "m_for_prioritization": null
+  },
+  "5": {
+    "problem": "test case selection",
+    "benchmark": "sampled_paintcontrol",
+    "constraint": "No",
+    "m_for_prioritization": null
+  },
+  "6": {
+    "problem": "test case selection",
+    "benchmark": "flex",
+    "constraint": "No",
+    "m_for_prioritization": null
+  },
+  "7": {
+    "problem": "test case selection",
+    "benchmark": "grep",
+    "constraint": "No",
+    "m_for_prioritization": null
+  },
+  "8": {
+    "problem": "test case selection",
+    "benchmark": "gzip",
+    "constraint": "No",
+    "m_for_prioritization": null
+  },
+  "9": {
+    "problem": "test case selection",
+    "benchmark": "sed",
+    "constraint": "No",
+    "m_for_prioritization": null
+  },
+  "10": {
+    "problem": "test case minimization",
+    "benchmark": "elevator_o2",
+    "constraint": "No",
+    "m_for_prioritization": null
+  },
+  "11": {
+    "problem": "test case minimization",
+    "benchmark": "elevator_o3",
+    "constraint": "No",
+    "m_for_prioritization": null
+  },
+  "12": {
+    "problem": "test case minimization",
+    "benchmark": "gsdtsr",
+    "constraint": "No",
+    "m_for_prioritization": null
+  },
+  "13": {
+    "problem": "test case minimization",
+    "benchmark": "iofrol",
+    "constraint": "No",
+    "m_for_prioritization": null
+  },
+  "14": {
+    "problem": "test case minimization",
+    "benchmark": "paintcontrol",
+    "constraint": "No",
+    "m_for_prioritization": null
+  },
+  "15": {
+    "problem": "test case minimization",
+    "benchmark": "sampled_paintcontrol",
+    "constraint": "No",
+    "m_for_prioritization": null
+  },
+  "16": {
+    "problem": "test case minimization",
+    "benchmark": "flex",
+    "constraint": "No",
+    "m_for_prioritization": null
+  },
+  "17": {
+    "problem": "test case minimization",
+    "benchmark": "grep",
+    "constraint": "No",
+    "m_for_prioritization": null
+  },
+  "18": {
+    "problem": "test case minimization",
+    "benchmark": "gzip",
+    "constraint": "No",
+    "m_for_prioritization": null
+  },
+  "19": {
+    "problem": "test case minimization",
+    "benchmark": "sed",
+    "constraint": "No",
+    "m_for_prioritization": null
+  },
+  "20": {
+    "problem": "configuration selection",
+    "benchmark": "feature_model_0",
+    "constraint": "feature_model_constraint_0.json",
+    "m_for_prioritization": null
+  },
+  "21": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_0",
+    "constraint": "feature_model_constraint_0.json",
+    "m_for_prioritization": 1
+  },
+  "22": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_0",
+    "constraint": "feature_model_constraint_0.json",
+    "m_for_prioritization": 5
+  },
+  "23": {
+    "problem": "configuration selection",
+    "benchmark": "feature_model_1",
+    "constraint": "feature_model_constraint_1.json",
+    "m_for_prioritization": null
+  },
+  "24": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_1",
+    "constraint": "feature_model_constraint_1.json",
+    "m_for_prioritization": 1
+  },
+  "25": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_1",
+    "constraint": "feature_model_constraint_1.json",
+    "m_for_prioritization": 5
+  },
+  "26": {
+    "problem": "configuration selection",
+    "benchmark": "feature_model_2",
+    "constraint": "feature_model_constraint_2.json",
+    "m_for_prioritization": null
+  },
+  "27": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_2",
+    "constraint": "feature_model_constraint_2.json",
+    "m_for_prioritization": 1
+  },
+  "28": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_2",
+    "constraint": "feature_model_constraint_2.json",
+    "m_for_prioritization": 5
+  },
+  "29": {
+    "problem": "configuration selection",
+    "benchmark": "feature_model_3",
+    "constraint": "feature_model_constraint_3.json",
+    "m_for_prioritization": null
+  },
+  "30": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_3",
+    "constraint": "feature_model_constraint_3.json",
+    "m_for_prioritization": 1
+  },
+  "31": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_3",
+    "constraint": "feature_model_constraint_3.json",
+    "m_for_prioritization": 5
+  },
+  "32": {
+    "problem": "configuration selection",
+    "benchmark": "feature_model_4",
+    "constraint": "feature_model_constraint_4.json",
+    "m_for_prioritization": null
+  },
+  "33": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_4",
+    "constraint": "feature_model_constraint_4.json",
+    "m_for_prioritization": 1
+  },
+  "34": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_4",
+    "constraint": "feature_model_constraint_4.json",
+    "m_for_prioritization": 5
+  },
+  "35": {
+    "problem": "configuration selection",
+    "benchmark": "feature_model_5",
+    "constraint": "feature_model_constraint_5.json",
+    "m_for_prioritization": null
+  },
+  "36": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_5",
+    "constraint": "feature_model_constraint_5.json",
+    "m_for_prioritization": 1
+  },
+  "37": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_5",
+    "constraint": "feature_model_constraint_5.json",
+    "m_for_prioritization": 5
+  },
+  "38": {
+    "problem": "configuration selection",
+    "benchmark": "feature_model_6",
+    "constraint": "feature_model_constraint_6.json",
+    "m_for_prioritization": null
+  },
+  "39": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_6",
+    "constraint": "feature_model_constraint_6.json",
+    "m_for_prioritization": 1
+  },
+  "40": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_6",
+    "constraint": "feature_model_constraint_6.json",
+    "m_for_prioritization": 5
+  },
+  "41": {
+    "problem": "configuration selection",
+    "benchmark": "feature_model_7",
+    "constraint": "feature_model_constraint_7.json",
+    "m_for_prioritization": null
+  },
+  "42": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_7",
+    "constraint": "feature_model_constraint_7.json",
+    "m_for_prioritization": 1
+  },
+  "43": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_7",
+    "constraint": "feature_model_constraint_7.json",
+    "m_for_prioritization": 5
+  },
+  "44": {
+    "problem": "configuration selection",
+    "benchmark": "feature_model_8",
+    "constraint": "feature_model_constraint_8.json",
+    "m_for_prioritization": null
+  },
+  "45": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_8",
+    "constraint": "feature_model_constraint_8.json",
+    "m_for_prioritization": 1
+  },
+  "46": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_8",
+    "constraint": "feature_model_constraint_8.json",
+    "m_for_prioritization": 5
+  },
+  "47": {
+    "problem": "configuration selection",
+    "benchmark": "feature_model_9",
+    "constraint": "feature_model_constraint_9.json",
+    "m_for_prioritization": null
+  },
+  "48": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_9",
+    "constraint": "feature_model_constraint_9.json",
+    "m_for_prioritization": 1
+  },
+  "49": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_9",
+    "constraint": "feature_model_constraint_9.json",
+    "m_for_prioritization": 5
+  },
+  "50": {
+    "problem": "configuration selection",
+    "benchmark": "feature_model_10",
+    "constraint": "feature_model_constraint_10.json",
+    "m_for_prioritization": null
+  },
+  "51": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_10",
+    "constraint": "feature_model_constraint_10.json",
+    "m_for_prioritization": 1
+  },
+  "52": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_10",
+    "constraint": "feature_model_constraint_10.json",
+    "m_for_prioritization": 5
+  },
+  "53": {
+    "problem": "configuration selection",
+    "benchmark": "feature_model_11",
+    "constraint": "feature_model_constraint_11.json",
+    "m_for_prioritization": null
+  },
+  "54": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_11",
+    "constraint": "feature_model_constraint_11.json",
+    "m_for_prioritization": 1
+  },
+  "55": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_11",
+    "constraint": "feature_model_constraint_11.json",
+    "m_for_prioritization": 5
+  },
+  "56": {
+    "problem": "configuration selection",
+    "benchmark": "feature_model_12",
+    "constraint": "feature_model_constraint_12.json",
+    "m_for_prioritization": null
+  },
+  "57": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_12",
+    "constraint": "feature_model_constraint_12.json",
+    "m_for_prioritization": 1
+  },
+  "58": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_12",
+    "constraint": "feature_model_constraint_12.json",
+    "m_for_prioritization": 5
+  },
+  "59": {
+    "problem": "configuration selection",
+    "benchmark": "feature_model_13",
+    "constraint": "feature_model_constraint_13.json",
+    "m_for_prioritization": null
+  },
+  "60": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_13",
+    "constraint": "feature_model_constraint_13.json",
+    "m_for_prioritization": 1
+  },
+  "61": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_13",
+    "constraint": "feature_model_constraint_13.json",
+    "m_for_prioritization": 5
+  },
+  "62": {
+    "problem": "configuration selection",
+    "benchmark": "feature_model_14",
+    "constraint": "feature_model_constraint_14.json",
+    "m_for_prioritization": null
+  },
+  "63": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_14",
+    "constraint": "feature_model_constraint_14.json",
+    "m_for_prioritization": 1
+  },
+  "64": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_14",
+    "constraint": "feature_model_constraint_14.json",
+    "m_for_prioritization": 5
+  },
+  "65": {
+    "problem": "configuration selection",
+    "benchmark": "feature_model_15",
+    "constraint": "feature_model_constraint_15.json",
+    "m_for_prioritization": null
+  },
+  "66": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_15",
+    "constraint": "feature_model_constraint_15.json",
+    "m_for_prioritization": 1
+  },
+  "67": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_15",
+    "constraint": "feature_model_constraint_15.json",
+    "m_for_prioritization": 5
+  },
+  "68": {
+    "problem": "configuration selection",
+    "benchmark": "feature_model_16",
+    "constraint": "feature_model_constraint_16.json",
+    "m_for_prioritization": null
+  },
+  "69": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_16",
+    "constraint": "feature_model_constraint_16.json",
+    "m_for_prioritization": 1
+  },
+  "70": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_16",
+    "constraint": "feature_model_constraint_16.json",
+    "m_for_prioritization": 5
+  },
+  "71": {
+    "problem": "configuration selection",
+    "benchmark": "feature_model_17",
+    "constraint": "feature_model_constraint_17.json",
+    "m_for_prioritization": null
+  },
+  "72": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_17",
+    "constraint": "feature_model_constraint_17.json",
+    "m_for_prioritization": 1
+  },
+  "73": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_17",
+    "constraint": "feature_model_constraint_17.json",
+    "m_for_prioritization": 5
+  },
+  "74": {
+    "problem": "configuration selection",
+    "benchmark": "feature_model_18",
+    "constraint": "feature_model_constraint_18.json",
+    "m_for_prioritization": null
+  },
+  "75": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_18",
+    "constraint": "feature_model_constraint_18.json",
+    "m_for_prioritization": 1
+  },
+  "76": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_18",
+    "constraint": "feature_model_constraint_18.json",
+    "m_for_prioritization": 5
+  },
+  "77": {
+    "problem": "configuration selection",
+    "benchmark": "feature_model_19",
+    "constraint": "feature_model_constraint_19.json",
+    "m_for_prioritization": null
+  },
+  "78": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_19",
+    "constraint": "feature_model_constraint_19.json",
+    "m_for_prioritization": 1
+  },
+  "79": {
+    "problem": "configuration prioritization",
+    "benchmark": "feature_model_19",
+    "constraint": "feature_model_constraint_19.json",
+    "m_for_prioritization": 5
+  }
+}

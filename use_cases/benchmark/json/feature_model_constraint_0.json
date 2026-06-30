@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "constraint": "A1"
+  },
+  {
+    "id": 2,
+    "constraint": "A1 or not C2"
+  },
+  {
+    "id": 3,
+    "constraint": "A1 or not C3"
+  },
+  {
+    "id": 4,
+    "constraint": "A1 or not C4"
+  },
+  {
+    "id": 5,
+    "constraint": "A1 or not C5"
+  },
+  {
+    "id": 6,
+    "constraint": "A1 or not C6"
+  },
+  {
+    "id": 7,
+    "constraint": "C2 or C3 or C4 or C5 or C6 or not A1"
+  }
+]

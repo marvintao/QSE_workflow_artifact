@@ -1,0 +1,46 @@
+[
+  {
+    "name": "A1",
+    "cost": 12
+  },
+  {
+    "name": "C2",
+    "cost": 60
+  },
+  {
+    "name": "C3",
+    "cost": 16
+  },
+  {
+    "name": "C4",
+    "cost": 30
+  },
+  {
+    "name": "C6",
+    "cost": 82
+  },
+  {
+    "name": "C7",
+    "cost": 48
+  },
+  {
+    "name": "C8",
+    "cost": 27
+  },
+  {
+    "name": "A5",
+    "cost": 13
+  },
+  {
+    "name": "C9",
+    "cost": 98
+  },
+  {
+    "name": "C10",
+    "cost": 69
+  },
+  {
+    "name": "C11",
+    "cost": 23
+  }
+]

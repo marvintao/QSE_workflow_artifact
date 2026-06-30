@@ -1,0 +1,281 @@
+﻿# User Requirement
+
+This is user requirement 77. 
+
+The agentic system should solve the software engineering optimization problem using quantum algorithms and generate the corresponding application.
+
+---
+
+## Problem Description
+
+The problem to be solved is configuration selection. 
+
+Its definition is as follows:
+
+  Definition of configuration selection:
+
+- **Given**:
+
+    - $FM$ attributed feature model is a set of $n \in \mathbb{N}$ features $FM = \{x_1, \cdots, x_n\}$ and each feature $x_i$ contains an attribute $a_i$ with $i \in [1,n]$
+    - $fc \subseteq FM$ a configuration is a set of selected features
+    - $C(fc): fc \mapsto r \in \mathbb{R}$ cost function calculating the cost $r$ of a configuration $fc$ over the attributes $a_j$ of features $\{x_j |x_j \in fc\}, j \le n$
+
+- **Goal**:
+
+    Find a valid configuration according to $FM$ that is optimal regarding $C(fc)$ with $fc \in FC$, where $FC$ is the set all possible configurations.
+
+---
+
+## Benchmark Instance
+
+The benchmark instance provides the specific input data for the problem. The data is presented in dictionary format. The keys represent the optimization objectives, and the values provide the corresponding data for those objectives. The agent should use this instance as the input for solving the optimization problem and generating the application.
+
+- The name of the benchmark instance is: feature_model_19.
+
+- Detailed instance data:
+
+  [
+  {
+    "name": "A1",
+    "cost": 48
+  },
+  {
+    "name": "C3",
+    "cost": 91
+  },
+  {
+    "name": "C5",
+    "cost": 10
+  },
+  {
+    "name": "A6",
+    "cost": 20
+  },
+  {
+    "name": "C7",
+    "cost": 66
+  },
+  {
+    "name": "C8",
+    "cost": 98
+  },
+  {
+    "name": "A4",
+    "cost": 59
+  },
+  {
+    "name": "C10",
+    "cost": 32
+  },
+  {
+    "name": "C11",
+    "cost": 40
+  },
+  {
+    "name": "A9",
+    "cost": 51
+  },
+  {
+    "name": "C12",
+    "cost": 16
+  },
+  {
+    "name": "A2",
+    "cost": 25
+  },
+  {
+    "name": "C13",
+    "cost": 99
+  },
+  {
+    "name": "C14",
+    "cost": 69
+  },
+  {
+    "name": "C15",
+    "cost": 11
+  },
+  {
+    "name": "C16",
+    "cost": 10
+  },
+  {
+    "name": "C17",
+    "cost": 57
+  },
+  {
+    "name": "C18",
+    "cost": 21
+  },
+  {
+    "name": "C19",
+    "cost": 78
+  },
+  {
+    "name": "C20",
+    "cost": 46
+  },
+  {
+    "name": "C21",
+    "cost": 41
+  }
+]
+
+- Constraints (if any):
+
+  [
+  {
+    "id": 1,
+    "constraint": "A1"
+  },
+  {
+    "id": 2,
+    "constraint": "A1 or not A2"
+  },
+  {
+    "id": 3,
+    "constraint": "A1 or not C3"
+  },
+  {
+    "id": 4,
+    "constraint": "A1 or not A4"
+  },
+  {
+    "id": 5,
+    "constraint": "A1 or not C5"
+  },
+  {
+    "id": 6,
+    "constraint": "A1 or not A6"
+  },
+  {
+    "id": 7,
+    "constraint": "A2 or C3 or A4 or C5 or A6 or not A1"
+  },
+  {
+    "id": 8,
+    "constraint": "A6 or not C7"
+  },
+  {
+    "id": 9,
+    "constraint": "A6 or not C8"
+  },
+  {
+    "id": 10,
+    "constraint": "C7 or C8 or not A6"
+  },
+  {
+    "id": 11,
+    "constraint": "A4 or not A9"
+  },
+  {
+    "id": 12,
+    "constraint": "A4 or not C10"
+  },
+  {
+    "id": 13,
+    "constraint": "A4 or not C11"
+  },
+  {
+    "id": 14,
+    "constraint": "A9 or not A4"
+  },
+  {
+    "id": 15,
+    "constraint": "C10 or not A4"
+  },
+  {
+    "id": 16,
+    "constraint": "A9 or not C12"
+  },
+  {
+    "id": 17,
+    "constraint": "C12 or not A9"
+  },
+  {
+    "id": 18,
+    "constraint": "A2 or not C13"
+  },
+  {
+    "id": 19,
+    "constraint": "A2 or not C14"
+  },
+  {
+    "id": 20,
+    "constraint": "A2 or not C15"
+  },
+  {
+    "id": 21,
+    "constraint": "A2 or not C16"
+  },
+  {
+    "id": 22,
+    "constraint": "A2 or not C17"
+  },
+  {
+    "id": 23,
+    "constraint": "A2 or not C18"
+  },
+  {
+    "id": 24,
+    "constraint": "A2 or not C19"
+  },
+  {
+    "id": 25,
+    "constraint": "A2 or not C20"
+  },
+  {
+    "id": 26,
+    "constraint": "A2 or not C21"
+  },
+  {
+    "id": 27,
+    "constraint": "C10 or C18"
+  },
+  {
+    "id": 28,
+    "constraint": "C18 or not C3"
+  },
+  {
+    "id": 29,
+    "constraint": "C10"
+  },
+  {
+    "id": 30,
+    "constraint": "C13 or not C16 or not C5"
+  }
+]
+
+---
+
+## Optimization Target
+
+The optimization target is: 
+
+- Objective(s) to be maximized:
+
+  No specific objectives to maximize.
+
+- Objective(s) to be minimized:
+
+  * cost: The total feature cost of a selected valid configuration.
+
+- Weight: Each objective (either to be maximized or minimized) has an equal weight in optimization.
+
+When designing the optimization formulation, selecting the quantum algorithm, and generating the application, the agent should use this target together with the benchmark instance above.
+
+---
+
+## Parameter Settings
+
+The agent should consider the following parameter settings when solving the optimization problem and generating the application:
+
+  * When designing the penalty parameter, it can be chosen as the sum of all feature costs times 1.5.
+
+---
+
+## Output Format
+
+In addition to the generated application, the agent should provide a detailed report covering the following aspects:
+
+  No specific output formats required.

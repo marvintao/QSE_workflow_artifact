@@ -1,0 +1,35 @@
+# LLM provider selection: claude | kimi | siliconflow | zhipu
+LLM_PROVIDER=claude
+
+# Claude (required when LLM_PROVIDER=claude)
+ANTHROPIC_API_KEY=sk-ant-...
+LLM_MODEL=claude-opus-4-7
+
+# Kimi / Moonshot AI (required when LLM_PROVIDER=kimi)
+KIMI_API_KEY=sk-...
+KIMI_BASE_URL=https://api.moonshot.cn/v1
+KIMI_MODEL=moonshot-v1-32k
+
+# SiliconFlow (required when LLM_PROVIDER=siliconflow,或前端模型选择器使用 SiliconFlow 模型时)
+SILICONFLOW_API_KEY=sk-...
+SILICONFLOW_BASE_URL=https://api.siliconflow.cn/v1
+SILICONFLOW_MODEL=deepseek-ai/DeepSeek-V4-Flash
+
+# Zhipu / BigModel (required when LLM_PROVIDER=zhipu)
+ZHIPU_API_KEY=sk-...
+ZHIPU_BASE_URL=https://open.bigmodel.cn/api/paas/v4
+ZHIPU_MODEL=glm-4-plus
+
+# Storage
+TRACE_DB_PATH=./traces.db
+ASSETS_DIR=./assets/store
+
+# Sandbox
+SANDBOX_MAX_QUBITS=24
+SANDBOX_TIMEOUT_S=60
+SANDBOX_MEMORY_MB=2048
+
+# Pipeline
+STAGE_TIMEOUT_S=60
+LLM_MAX_RETRIES=3
+LLM_TIMEOUT_S=90

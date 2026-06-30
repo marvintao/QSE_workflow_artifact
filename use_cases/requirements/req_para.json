@@ -1,0 +1,14 @@
+{
+    "problem": {
+        "configuration prioritization": [
+            "Let the parameter $m$ for configuration prioritization be 1.",
+            "Let the parameter $m$ for configuration prioritization be 5."
+        ]
+    },
+    "constraint": {
+        "configuration selection": 
+            "When designing the penalty parameter, it can be chosen as the sum of all feature costs times 1.5.",
+        "configuration prioritization": 
+            "When designing the penalty parameter, it can be chosen as the sum of all feature costs times 1.5."
+    }
+}

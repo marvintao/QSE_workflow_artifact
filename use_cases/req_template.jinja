@@ -1,0 +1,65 @@
+﻿# User Requirement
+
+This is user requirement {{ req_id }}. 
+
+The agentic system should solve the software engineering optimization problem using quantum algorithms and generate the corresponding application.
+
+---
+
+## Problem Description
+
+The problem to be solved is {{ problem_name }}. 
+
+Its definition is as follows:
+
+  {{ problem_definition }}
+
+---
+
+## Benchmark Instance
+
+The benchmark instance provides the specific input data for the problem. The data is presented in dictionary format. The keys represent the optimization objectives, and the values provide the corresponding data for those objectives. The agent should use this instance as the input for solving the optimization problem and generating the application.
+
+- The name of the benchmark instance is: {{ instance_name }}.
+
+- Detailed instance data:
+
+  {{ instance }}
+
+- Constraints (if any):
+
+  {{ constraints | default("No specific constraints provided.") }}
+
+---
+
+## Optimization Target
+
+The optimization target is: 
+
+- Objective(s) to be maximized:
+
+  {{ opt_max | default("No specific objectives to maximize.") }}
+
+- Objective(s) to be minimized:
+
+  {{ opt_min | default("No specific objectives to minimize.") }}
+
+- Weight: Each objective (either to be maximized or minimized) has an equal weight in optimization.
+
+When designing the optimization formulation, selecting the quantum algorithm, and generating the application, the agent should use this target together with the benchmark instance above.
+
+---
+
+## Parameter Settings
+
+The agent should consider the following parameter settings when solving the optimization problem and generating the application:
+
+  {{ parameters | default("No specific parameter settings provided.") }}
+
+---
+
+## Output Format
+
+In addition to the generated application, the agent should provide a detailed report covering the following aspects:
+
+  {{ output_formats | default("No specific output formats required.") }}

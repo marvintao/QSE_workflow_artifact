@@ -1,0 +1,3 @@
+Definition of test case minimization:
+
+Given a test suite $T = \{t_0, \cdots , t_{n−1}\}$ with a set of testing attributes for the software under test and the corresponding testing objectives, test case minimization aims to select minimum subset of test cases $T' \in T$ that satisfy all testing objectives as much as possible. The testing objectives $F = \{f_0, \cdots , f_{m−1}\}$ include ones associated with attributes of the test cases and the one specific objective aiming to minimize the size of $T'$, which makes test case minimization different from test case selection.
