@@ -6,7 +6,5 @@ SelectQA_bench: [
 ]
 problem_name : [
   "test case minimization", 
-  "test case selection", 
-  "configuration selection",
-  "configuration prioritization"
+  "test case selection"
 ]

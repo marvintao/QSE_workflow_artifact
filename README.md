@@ -1,6 +1,6 @@
-# Quantum Workflow Platform
+# QPipe 
 
-A web platform that turns a natural-language description of a quantum-computing
+QPipe is a quantum workflow that turns a natural-language description of a quantum-computing
 need into a real, verified result. The LLM autonomously picks the algorithm,
 decomposes the problem into a hybrid classical + quantum DAG, writes Qiskit
 code, runs it in a sandbox, and cross-checks the output against a classical

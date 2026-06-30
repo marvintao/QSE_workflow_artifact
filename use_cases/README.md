@@ -2,11 +2,7 @@
 
 This directory contains the benchmark instances, problem definitions, and generated user requirements used by the QSE workflow. The generated requirements ask an agentic system to formulate software-engineering optimization problems, solve them with quantum algorithms, and produce the corresponding application/report.
 
-The current generated set contains 80 requirement files:
-
-- 20 requirements for test-case optimization benchmarks.
-- 20 requirements for configuration selection feature models.
-- 40 requirements for configuration prioritization feature models, generated from two `m` candidates in `requirements/req_para.json`.
+The current generated set contains 20 requirement files for test-case optimization benchmarks.
 
 ## Directory Layout
 
@@ -24,7 +20,7 @@ The current generated set contains 80 requirement files:
 | [benchmark/process_configuration.py](./benchmark/process_configuration.py) | Converts configuration DIMACS benchmarks into feature-cost and constraint JSON files. |
 | [requirements/req_gen.py](./requirements/req_gen.py) | Generates requirement text files and the requirement overview JSON. |
 | [requirements/req_para.json](./requirements/req_para.json) | Optional parameter guidance keyed by problem type and constrained-problem type. |
-| [requirements/req_txt/](./requirements/req_txt) | Generated requirement files named `req_0.txt` through `req_79.txt`. |
+| [requirements/req_txt/](./requirements/req_txt) | Generated requirement files named `req_0.txt` through `req_19.txt`. |
 | [requirements/req_overview.json](./requirements/req_overview.json) | Machine-readable mapping from requirement id to problem, benchmark, constraint file, and prioritization `m` value. |
 
 ## Supported Problems
@@ -108,7 +104,7 @@ Configuration benchmarks do not have explicit entries in `objectives.json`. `req
 |:---|:---|:---|
 | `IGDecQAOA_bench` | `gsdtsr`, `iofrol`, `paintcontrol`, `sampled_paintcontrol` | `process_IGDec-QAOA.py`, `req_gen.py` |
 | `SelectQA_bench` | `flex`, `grep`, `gsdtsr`, `gzip` | `process_SelectQA.py`, `req_gen.py` |
-| `problem_name` | `test case minimization`, `test case selection`, `configuration selection`, `configuration prioritization` | Documentation/reference |
+| `problem_name` | `test case minimization`, `test case selection` | Documentation/reference |
 
 `req_gen.py` also has a built-in test-case benchmark list:
 
@@ -128,7 +124,7 @@ Defines optional parameter settings inserted into the `Parameter Settings` secti
 | `problem` | Parameter guidance keyed by optimization problem name. If the value is a list, `req_gen.py` generates one requirement per list item for that problem/benchmark pair. |
 | `constraint` | Parameter guidance keyed by optimization problem name, used only when the benchmark has an explicit constraint file. |
 
-The current `problem.configuration prioritization` value contains two `m` settings, so each feature model generates two configuration-prioritization requirements: one with `m = 1` and one with `m = 5`. The current `constraint.configuration selection` and `constraint.configuration prioritization` values add penalty-parameter guidance for constrained feature-model requirements.
+The current generated requirement set does not use configuration-optimization parameter guidance.
 
 ## Generation Workflow
 
@@ -137,13 +133,12 @@ Run commands from this directory:
 ```powershell
 python .\benchmark\process_IGDec-QAOA.py
 python .\benchmark\process_SelectQA.py
-python .\benchmark\process_configuration.py
 python .\requirements\req_gen.py
 ```
 
 The benchmark processing scripts regenerate normalized data under `benchmark/json/`. The requirement generator then writes:
 
-- `requirements/req_txt/req_0.txt` through `requirements/req_txt/req_79.txt`.
+- `requirements/req_txt/req_0.txt` through `requirements/req_txt/req_19.txt`.
 - `requirements/req_overview.json`.
 
 When `requirements/req_gen.py` runs, it deletes existing `req_*.txt` files in `requirements/req_txt/` before writing the new generated set.
@@ -205,66 +200,6 @@ The authoritative machine-readable mapping is [requirements/req_overview.json](.
 | [17](./requirements/req_txt/req_17.txt) | test case minimization | [grep](./benchmark/json/grep.json) | No | None |
 | [18](./requirements/req_txt/req_18.txt) | test case minimization | [gzip](./benchmark/json/gzip.json) | No | None |
 | [19](./requirements/req_txt/req_19.txt) | test case minimization | [sed](./benchmark/json/sed.json) | No | None |
-| [20](./requirements/req_txt/req_20.txt) | configuration selection | [feature_model_0](./benchmark/json/feature_model_cost_0.json) | [feature_model_constraint_0.json](./benchmark/json/feature_model_constraint_0.json) | None |
-| [21](./requirements/req_txt/req_21.txt) | configuration prioritization | [feature_model_0](./benchmark/json/feature_model_cost_0.json) | [feature_model_constraint_0.json](./benchmark/json/feature_model_constraint_0.json) | 1 |
-| [22](./requirements/req_txt/req_22.txt) | configuration prioritization | [feature_model_0](./benchmark/json/feature_model_cost_0.json) | [feature_model_constraint_0.json](./benchmark/json/feature_model_constraint_0.json) | 5 |
-| [23](./requirements/req_txt/req_23.txt) | configuration selection | [feature_model_1](./benchmark/json/feature_model_cost_1.json) | [feature_model_constraint_1.json](./benchmark/json/feature_model_constraint_1.json) | None |
-| [24](./requirements/req_txt/req_24.txt) | configuration prioritization | [feature_model_1](./benchmark/json/feature_model_cost_1.json) | [feature_model_constraint_1.json](./benchmark/json/feature_model_constraint_1.json) | 1 |
-| [25](./requirements/req_txt/req_25.txt) | configuration prioritization | [feature_model_1](./benchmark/json/feature_model_cost_1.json) | [feature_model_constraint_1.json](./benchmark/json/feature_model_constraint_1.json) | 5 |
-| [26](./requirements/req_txt/req_26.txt) | configuration selection | [feature_model_2](./benchmark/json/feature_model_cost_2.json) | [feature_model_constraint_2.json](./benchmark/json/feature_model_constraint_2.json) | None |
-| [27](./requirements/req_txt/req_27.txt) | configuration prioritization | [feature_model_2](./benchmark/json/feature_model_cost_2.json) | [feature_model_constraint_2.json](./benchmark/json/feature_model_constraint_2.json) | 1 |
-| [28](./requirements/req_txt/req_28.txt) | configuration prioritization | [feature_model_2](./benchmark/json/feature_model_cost_2.json) | [feature_model_constraint_2.json](./benchmark/json/feature_model_constraint_2.json) | 5 |
-| [29](./requirements/req_txt/req_29.txt) | configuration selection | [feature_model_3](./benchmark/json/feature_model_cost_3.json) | [feature_model_constraint_3.json](./benchmark/json/feature_model_constraint_3.json) | None |
-| [30](./requirements/req_txt/req_30.txt) | configuration prioritization | [feature_model_3](./benchmark/json/feature_model_cost_3.json) | [feature_model_constraint_3.json](./benchmark/json/feature_model_constraint_3.json) | 1 |
-| [31](./requirements/req_txt/req_31.txt) | configuration prioritization | [feature_model_3](./benchmark/json/feature_model_cost_3.json) | [feature_model_constraint_3.json](./benchmark/json/feature_model_constraint_3.json) | 5 |
-| [32](./requirements/req_txt/req_32.txt) | configuration selection | [feature_model_4](./benchmark/json/feature_model_cost_4.json) | [feature_model_constraint_4.json](./benchmark/json/feature_model_constraint_4.json) | None |
-| [33](./requirements/req_txt/req_33.txt) | configuration prioritization | [feature_model_4](./benchmark/json/feature_model_cost_4.json) | [feature_model_constraint_4.json](./benchmark/json/feature_model_constraint_4.json) | 1 |
-| [34](./requirements/req_txt/req_34.txt) | configuration prioritization | [feature_model_4](./benchmark/json/feature_model_cost_4.json) | [feature_model_constraint_4.json](./benchmark/json/feature_model_constraint_4.json) | 5 |
-| [35](./requirements/req_txt/req_35.txt) | configuration selection | [feature_model_5](./benchmark/json/feature_model_cost_5.json) | [feature_model_constraint_5.json](./benchmark/json/feature_model_constraint_5.json) | None |
-| [36](./requirements/req_txt/req_36.txt) | configuration prioritization | [feature_model_5](./benchmark/json/feature_model_cost_5.json) | [feature_model_constraint_5.json](./benchmark/json/feature_model_constraint_5.json) | 1 |
-| [37](./requirements/req_txt/req_37.txt) | configuration prioritization | [feature_model_5](./benchmark/json/feature_model_cost_5.json) | [feature_model_constraint_5.json](./benchmark/json/feature_model_constraint_5.json) | 5 |
-| [38](./requirements/req_txt/req_38.txt) | configuration selection | [feature_model_6](./benchmark/json/feature_model_cost_6.json) | [feature_model_constraint_6.json](./benchmark/json/feature_model_constraint_6.json) | None |
-| [39](./requirements/req_txt/req_39.txt) | configuration prioritization | [feature_model_6](./benchmark/json/feature_model_cost_6.json) | [feature_model_constraint_6.json](./benchmark/json/feature_model_constraint_6.json) | 1 |
-| [40](./requirements/req_txt/req_40.txt) | configuration prioritization | [feature_model_6](./benchmark/json/feature_model_cost_6.json) | [feature_model_constraint_6.json](./benchmark/json/feature_model_constraint_6.json) | 5 |
-| [41](./requirements/req_txt/req_41.txt) | configuration selection | [feature_model_7](./benchmark/json/feature_model_cost_7.json) | [feature_model_constraint_7.json](./benchmark/json/feature_model_constraint_7.json) | None |
-| [42](./requirements/req_txt/req_42.txt) | configuration prioritization | [feature_model_7](./benchmark/json/feature_model_cost_7.json) | [feature_model_constraint_7.json](./benchmark/json/feature_model_constraint_7.json) | 1 |
-| [43](./requirements/req_txt/req_43.txt) | configuration prioritization | [feature_model_7](./benchmark/json/feature_model_cost_7.json) | [feature_model_constraint_7.json](./benchmark/json/feature_model_constraint_7.json) | 5 |
-| [44](./requirements/req_txt/req_44.txt) | configuration selection | [feature_model_8](./benchmark/json/feature_model_cost_8.json) | [feature_model_constraint_8.json](./benchmark/json/feature_model_constraint_8.json) | None |
-| [45](./requirements/req_txt/req_45.txt) | configuration prioritization | [feature_model_8](./benchmark/json/feature_model_cost_8.json) | [feature_model_constraint_8.json](./benchmark/json/feature_model_constraint_8.json) | 1 |
-| [46](./requirements/req_txt/req_46.txt) | configuration prioritization | [feature_model_8](./benchmark/json/feature_model_cost_8.json) | [feature_model_constraint_8.json](./benchmark/json/feature_model_constraint_8.json) | 5 |
-| [47](./requirements/req_txt/req_47.txt) | configuration selection | [feature_model_9](./benchmark/json/feature_model_cost_9.json) | [feature_model_constraint_9.json](./benchmark/json/feature_model_constraint_9.json) | None |
-| [48](./requirements/req_txt/req_48.txt) | configuration prioritization | [feature_model_9](./benchmark/json/feature_model_cost_9.json) | [feature_model_constraint_9.json](./benchmark/json/feature_model_constraint_9.json) | 1 |
-| [49](./requirements/req_txt/req_49.txt) | configuration prioritization | [feature_model_9](./benchmark/json/feature_model_cost_9.json) | [feature_model_constraint_9.json](./benchmark/json/feature_model_constraint_9.json) | 5 |
-| [50](./requirements/req_txt/req_50.txt) | configuration selection | [feature_model_10](./benchmark/json/feature_model_cost_10.json) | [feature_model_constraint_10.json](./benchmark/json/feature_model_constraint_10.json) | None |
-| [51](./requirements/req_txt/req_51.txt) | configuration prioritization | [feature_model_10](./benchmark/json/feature_model_cost_10.json) | [feature_model_constraint_10.json](./benchmark/json/feature_model_constraint_10.json) | 1 |
-| [52](./requirements/req_txt/req_52.txt) | configuration prioritization | [feature_model_10](./benchmark/json/feature_model_cost_10.json) | [feature_model_constraint_10.json](./benchmark/json/feature_model_constraint_10.json) | 5 |
-| [53](./requirements/req_txt/req_53.txt) | configuration selection | [feature_model_11](./benchmark/json/feature_model_cost_11.json) | [feature_model_constraint_11.json](./benchmark/json/feature_model_constraint_11.json) | None |
-| [54](./requirements/req_txt/req_54.txt) | configuration prioritization | [feature_model_11](./benchmark/json/feature_model_cost_11.json) | [feature_model_constraint_11.json](./benchmark/json/feature_model_constraint_11.json) | 1 |
-| [55](./requirements/req_txt/req_55.txt) | configuration prioritization | [feature_model_11](./benchmark/json/feature_model_cost_11.json) | [feature_model_constraint_11.json](./benchmark/json/feature_model_constraint_11.json) | 5 |
-| [56](./requirements/req_txt/req_56.txt) | configuration selection | [feature_model_12](./benchmark/json/feature_model_cost_12.json) | [feature_model_constraint_12.json](./benchmark/json/feature_model_constraint_12.json) | None |
-| [57](./requirements/req_txt/req_57.txt) | configuration prioritization | [feature_model_12](./benchmark/json/feature_model_cost_12.json) | [feature_model_constraint_12.json](./benchmark/json/feature_model_constraint_12.json) | 1 |
-| [58](./requirements/req_txt/req_58.txt) | configuration prioritization | [feature_model_12](./benchmark/json/feature_model_cost_12.json) | [feature_model_constraint_12.json](./benchmark/json/feature_model_constraint_12.json) | 5 |
-| [59](./requirements/req_txt/req_59.txt) | configuration selection | [feature_model_13](./benchmark/json/feature_model_cost_13.json) | [feature_model_constraint_13.json](./benchmark/json/feature_model_constraint_13.json) | None |
-| [60](./requirements/req_txt/req_60.txt) | configuration prioritization | [feature_model_13](./benchmark/json/feature_model_cost_13.json) | [feature_model_constraint_13.json](./benchmark/json/feature_model_constraint_13.json) | 1 |
-| [61](./requirements/req_txt/req_61.txt) | configuration prioritization | [feature_model_13](./benchmark/json/feature_model_cost_13.json) | [feature_model_constraint_13.json](./benchmark/json/feature_model_constraint_13.json) | 5 |
-| [62](./requirements/req_txt/req_62.txt) | configuration selection | [feature_model_14](./benchmark/json/feature_model_cost_14.json) | [feature_model_constraint_14.json](./benchmark/json/feature_model_constraint_14.json) | None |
-| [63](./requirements/req_txt/req_63.txt) | configuration prioritization | [feature_model_14](./benchmark/json/feature_model_cost_14.json) | [feature_model_constraint_14.json](./benchmark/json/feature_model_constraint_14.json) | 1 |
-| [64](./requirements/req_txt/req_64.txt) | configuration prioritization | [feature_model_14](./benchmark/json/feature_model_cost_14.json) | [feature_model_constraint_14.json](./benchmark/json/feature_model_constraint_14.json) | 5 |
-| [65](./requirements/req_txt/req_65.txt) | configuration selection | [feature_model_15](./benchmark/json/feature_model_cost_15.json) | [feature_model_constraint_15.json](./benchmark/json/feature_model_constraint_15.json) | None |
-| [66](./requirements/req_txt/req_66.txt) | configuration prioritization | [feature_model_15](./benchmark/json/feature_model_cost_15.json) | [feature_model_constraint_15.json](./benchmark/json/feature_model_constraint_15.json) | 1 |
-| [67](./requirements/req_txt/req_67.txt) | configuration prioritization | [feature_model_15](./benchmark/json/feature_model_cost_15.json) | [feature_model_constraint_15.json](./benchmark/json/feature_model_constraint_15.json) | 5 |
-| [68](./requirements/req_txt/req_68.txt) | configuration selection | [feature_model_16](./benchmark/json/feature_model_cost_16.json) | [feature_model_constraint_16.json](./benchmark/json/feature_model_constraint_16.json) | None |
-| [69](./requirements/req_txt/req_69.txt) | configuration prioritization | [feature_model_16](./benchmark/json/feature_model_cost_16.json) | [feature_model_constraint_16.json](./benchmark/json/feature_model_constraint_16.json) | 1 |
-| [70](./requirements/req_txt/req_70.txt) | configuration prioritization | [feature_model_16](./benchmark/json/feature_model_cost_16.json) | [feature_model_constraint_16.json](./benchmark/json/feature_model_constraint_16.json) | 5 |
-| [71](./requirements/req_txt/req_71.txt) | configuration selection | [feature_model_17](./benchmark/json/feature_model_cost_17.json) | [feature_model_constraint_17.json](./benchmark/json/feature_model_constraint_17.json) | None |
-| [72](./requirements/req_txt/req_72.txt) | configuration prioritization | [feature_model_17](./benchmark/json/feature_model_cost_17.json) | [feature_model_constraint_17.json](./benchmark/json/feature_model_constraint_17.json) | 1 |
-| [73](./requirements/req_txt/req_73.txt) | configuration prioritization | [feature_model_17](./benchmark/json/feature_model_cost_17.json) | [feature_model_constraint_17.json](./benchmark/json/feature_model_constraint_17.json) | 5 |
-| [74](./requirements/req_txt/req_74.txt) | configuration selection | [feature_model_18](./benchmark/json/feature_model_cost_18.json) | [feature_model_constraint_18.json](./benchmark/json/feature_model_constraint_18.json) | None |
-| [75](./requirements/req_txt/req_75.txt) | configuration prioritization | [feature_model_18](./benchmark/json/feature_model_cost_18.json) | [feature_model_constraint_18.json](./benchmark/json/feature_model_constraint_18.json) | 1 |
-| [76](./requirements/req_txt/req_76.txt) | configuration prioritization | [feature_model_18](./benchmark/json/feature_model_cost_18.json) | [feature_model_constraint_18.json](./benchmark/json/feature_model_constraint_18.json) | 5 |
-| [77](./requirements/req_txt/req_77.txt) | configuration selection | [feature_model_19](./benchmark/json/feature_model_cost_19.json) | [feature_model_constraint_19.json](./benchmark/json/feature_model_constraint_19.json) | None |
-| [78](./requirements/req_txt/req_78.txt) | configuration prioritization | [feature_model_19](./benchmark/json/feature_model_cost_19.json) | [feature_model_constraint_19.json](./benchmark/json/feature_model_constraint_19.json) | 1 |
-| [79](./requirements/req_txt/req_79.txt) | configuration prioritization | [feature_model_19](./benchmark/json/feature_model_cost_19.json) | [feature_model_constraint_19.json](./benchmark/json/feature_model_constraint_19.json) | 5 |
 
 ## Benchmark Sources
 

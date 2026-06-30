@@ -1,10 +1,8 @@
-"""Sample large user-requirement instances for QSE workflow experiments.
+"""Sample large test-case optimization requirements for QSE workflow experiments.
 
-The script samples test-case optimization and configuration optimization
-requirements separately. Within each group, requirements are sorted by instance
-size in descending order, where size is:
+Requirements are sorted by instance size in descending order, where size is:
 
-    number of tests/configurations + number of constraints
+    number of tests
 
 The output JSON records each sampled requirement file and its computed size.
 """
@@ -27,13 +25,8 @@ TEST_CASE_PROBLEMS = {
     "test case selection",
     "test case minimization",
 }
-CONFIGURATION_PROBLEMS = {
-    "configuration selection",
-    "configuration prioritization",
-}
 
 REQ_FILE_RE = re.compile(r"^req_(\d+)\.txt$")
-FEATURE_MODEL_RE = re.compile(r"^feature_model_(\d+)$")
 
 
 @dataclass(frozen=True)
@@ -85,13 +78,6 @@ def sorted_requirement_files(req_txt_dir: str) -> list[str]:
 
 def benchmark_files(benchmark_name: str) -> tuple[str, str | None]:
     """Return benchmark data and optional constraint filenames for an instance."""
-    feature_match = FEATURE_MODEL_RE.match(benchmark_name)
-    if feature_match:
-        model_id = feature_match.group(1)
-        return (
-            f"feature_model_cost_{model_id}.json",
-            f"feature_model_constraint_{model_id}.json",
-        )
     return f"{benchmark_name}.json", None
 
 
@@ -114,7 +100,7 @@ def build_candidate(req_filename: str, overview: dict[str, Any]) -> Candidate:
 
     constraint_file = metadata.get("constraint")
     if not constraint_file or constraint_file == "No":
-        constraint_file = default_constraint_file if problem in CONFIGURATION_PROBLEMS else None
+        constraint_file = default_constraint_file
 
     constraint_count = 0
     if constraint_file:
@@ -158,17 +144,15 @@ def sample_requirements(
     req_txt_dir: str = REQ_TXT_DIR,
     overview_path: str = REQ_OVERVIEW_PATH,
 ) -> SampledGroup:
-    """Sample test-case and configuration optimization requirements separately."""
+    """Sample test-case optimization requirements."""
     overview = load_json(overview_path)
     if not isinstance(overview, dict):
         raise ValueError(f"Requirement overview must be a JSON object: {overview_path}")
 
     candidates = [build_candidate(req_filename, overview) for req_filename in sorted_requirement_files(req_txt_dir)]
     sampled_test_cases = sample_top(candidates, TEST_CASE_PROBLEMS, sample_size)
-    sampled_configurations = sample_top(candidates, CONFIGURATION_PROBLEMS, sample_size)
     return {
         "test case optimization": [candidate_metadata(candidate) for candidate in sampled_test_cases],
-        "configuration optimization": [candidate_metadata(candidate) for candidate in sampled_configurations],
     }
 
 
@@ -191,7 +175,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
             "Sample top user-requirement files from req_txt by descending "
-            "tests/configurations count plus constraints count."
+            "test count."
         )
     )
     parser.add_argument(
@@ -199,7 +183,7 @@ def parse_args() -> argparse.Namespace:
         "--sample-size",
         type=int,
         default=10,
-        help="number of test-case and configuration requirements to sample separately",
+        help="number of test-case requirements to sample",
     )
     parser.add_argument(
         "-o",
