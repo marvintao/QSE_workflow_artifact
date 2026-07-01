@@ -1,6 +1,6 @@
 ﻿# Use Cases
 
-This directory contains the benchmark instances, problem definitions, and generated user requirements used by the QSE workflow. The generated requirements ask an agentic system to formulate software-engineering optimization problems, solve them with quantum algorithms, and produce the corresponding application/report.
+This directory contains the benchmark instances, problem definitions, and generated task-level requirements used by the QSE workflow. The generated task-level requirements ask an agentic system to formulate software-engineering optimization problems, solve them with quantum algorithms, and produce the corresponding application/report.
 
 The current generated set contains 20 requirement files for test-case optimization benchmarks.
 
@@ -10,7 +10,7 @@ The current generated set contains 20 requirement files for test-case optimizati
 |:---|:---|
 | [config.yaml](./config.yaml) | Lists the benchmark families and problem names used by the processing and generation scripts. |
 | [req_template.jinja](./req_template.jinja) | Jinja template for rendering each natural-language requirement file. |
-| [output_frame.md](./output_frame.md) | Optional report-format instructions inserted into generated requirements. If empty, a default sentence is used. |
+| [output_frame.md](./output_frame.md) | Optional report-format instructions inserted into generated task-level requirements. If empty, a default sentence is used. |
 | [problem_def/](./problem_def) | Markdown definitions for the four supported optimization problems. |
 | [benchmark/original/](./benchmark/original) | Raw benchmark artifacts copied from the source projects/papers. |
 | [benchmark/json/](./benchmark/json) | Normalized JSON benchmark instances consumed by the requirement generator. |
@@ -32,7 +32,7 @@ The current generated set contains 20 requirement files for test-case optimizati
 | `configuration selection` | [problem_def/configuration_selection.md](./problem_def/configuration_selection.md) |
 | `configuration prioritization` | [problem_def/configuration_prioritization.md](./problem_def/configuration_prioritization.md) |
 
-The problem-definition directory also includes [problem_def/README.md](./problem_def/README.md), which records reference literature for human readers. Generated requirements should be self-contained; agents solving the requirements should not need to research the cited papers.
+The problem-definition directory also includes [problem_def/README.md](./problem_def/README.md), which records reference literature for human readers. Generated task-level requirements should be self-contained; agents solving the requirements should not need to research the cited papers.
 
 ## Benchmark Data
 
@@ -117,7 +117,7 @@ The generated test-case requirements are based on the union of this built-in lis
 
 ### [requirements/req_para.json](./requirements/req_para.json)
 
-Defines optional parameter settings inserted into the `Parameter Settings` section of generated requirements.
+Defines optional parameter settings inserted into the `Parameter Settings` section of generated task-level requirements.
 
 | Key | Meaning |
 |:---|:---|

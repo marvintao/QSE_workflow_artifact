@@ -1,6 +1,6 @@
-﻿# User Requirement
+﻿# Task-Level Requirement
 
-This is user requirement 7. 
+This is task-level requirement 7. 
 
 The agentic system should solve the software engineering optimization problem using quantum algorithms and generate the corresponding application.
 
@@ -14,7 +14,7 @@ Its definition is as follows:
 
   Definition of test case selection:
 
-Given a test suite $T = \{t_0, \cdots, t_{n−1}\}$ with a set of testing attributes for the software under test and the corresponding testing objectives $F = \{f_0, \cdots, f_{m−1}\}$, test case selection aims to select a subset $T' \in T$ to satisfy all objectives as much as possible. Each objective is associated with one of the attributes of the test cases.
+Given a test suite $T = \{t_0, \cdots, t_{n-1}\}$ with a set of testing attributes for the software under test and the corresponding testing objectives $F = \{f_0, \cdots, f_{m-1}\}$, test case selection aims to select a subset $T' \in T$ to satisfy all objectives as much as possible. Each objective is associated with one of the attributes of the test cases.
 
 ---
 
