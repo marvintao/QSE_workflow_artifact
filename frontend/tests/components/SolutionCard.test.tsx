@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * SolutionCard component tests: verifies algorithm, qubit-count and execution
  * result display, the empty state when no execution data is present, and the

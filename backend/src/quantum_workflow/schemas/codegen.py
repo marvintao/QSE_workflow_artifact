@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Code-generation stage data models: the LLM-produced quantum-workflow code and its coverage report."""
 
 from pydantic import BaseModel

@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Pipeline stage: codegen — real agent + 7 tools running a write -> check -> run -> fix inner loop.
 
 Input: ParsedIntent + QuantumKernel + a quantum BlueprintNode + a

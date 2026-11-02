@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 import { describe, it, expect } from "vitest";
 import { screen, act } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";

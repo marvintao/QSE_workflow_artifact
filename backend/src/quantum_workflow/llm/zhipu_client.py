@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Zhipu (BigModel) client: OpenAI-compatible API targeting the GLM family.
 
 API docs: https://open.bigmodel.cn/dev/api

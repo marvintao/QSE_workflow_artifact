@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 import { render } from "@testing-library/react";
 import type { ReactElement } from "react";
 import { LanguageProvider } from "../i18n/LanguageProvider";

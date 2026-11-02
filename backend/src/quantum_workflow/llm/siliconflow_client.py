@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """SiliconFlow client: talks to SiliconFlow via its OpenAI-compatible API, with retried synchronous calls."""
 
 import json

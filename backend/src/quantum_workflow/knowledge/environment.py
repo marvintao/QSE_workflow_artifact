@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Execution-environment facts: algorithm-agnostic notes about the target environment and its API, injected into stage 4."""
 from pathlib import Path
 

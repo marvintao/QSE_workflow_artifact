@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """顺序跑 use_cases/requirements/req_txt/req_{id}.txt 列出的若干用例。
 
 通过本地 backend(默认 http://127.0.0.1:8000)POST /request 提交需求,

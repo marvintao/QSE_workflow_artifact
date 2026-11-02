@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * Root component responsible for the overall layout and cross-panel state coordination.
  * Composes the chat panel, workflow visualizer and detail inspector into a three-column layout,

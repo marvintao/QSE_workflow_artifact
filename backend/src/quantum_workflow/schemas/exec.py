@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Code-execution stage data models: execution status, result, and verification state for quantum-circuit runs."""
 
 from enum import Enum

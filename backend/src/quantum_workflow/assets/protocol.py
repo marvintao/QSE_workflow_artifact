@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Data models and protocol for the asset repository.
 
 Defines AssetMatch (a lookup result), Asset (a stored asset), and

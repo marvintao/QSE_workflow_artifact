@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Pipeline stage: combine — merge N sub-circuit results into a complete solution for the original problem.
 
 Phase 1 single-LLM-call version (Phase 2 upgrades to a real agent with tools).

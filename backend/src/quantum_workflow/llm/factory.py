@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """LLM factory: select and instantiate the LLM client matching the configuration
 (Claude / Kimi / SiliconFlow / Zhipu / AWS Bedrock)."""
 

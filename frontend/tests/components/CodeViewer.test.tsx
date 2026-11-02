@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * CodeViewer component tests: verifies content rendering when code is present,
  * and the empty-state hint when code is null.

@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Sample large test-case optimization requirements for QSE workflow experiments.
 
 Requirements are sorted by instance size in descending order, where size is:

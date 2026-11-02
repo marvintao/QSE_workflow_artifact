@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Claude Agent SDK client: uses subscription OAuth (no ANTHROPIC_API_KEY required).
 
 The SDK relies on the local `claude` CLI's OAuth credentials. This is

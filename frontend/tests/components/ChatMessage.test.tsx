@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * ChatMessage component tests: verifies render behavior for the three message
  * kinds (user / agent / system) and the case where an agent message wraps

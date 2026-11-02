@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """v1 no-op lookup implementation of the asset repository.
 
 `lookup` always returns an empty list (no similarity search), but `save`

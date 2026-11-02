@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Quantum building block: fast QAOA helpers (diagonal-Hamiltonian only).
 
 Why this module exists:

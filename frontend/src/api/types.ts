@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * Backend API data-type definitions.
  * Covers the five generative pipeline stages

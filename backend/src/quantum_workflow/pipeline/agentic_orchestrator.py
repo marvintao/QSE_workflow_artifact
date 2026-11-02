@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Agentic pipeline orchestrator (Phase 1): an 8-stage flow.
 
 parse -> analyze -> blueprint -> encode -> codegen* -> execute(xN) -> combine -> verify*

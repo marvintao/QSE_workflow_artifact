@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * CodeViewer component.
  * Uses prism-react-renderer to display the generated quantum Python code with syntax highlighting and line numbers.

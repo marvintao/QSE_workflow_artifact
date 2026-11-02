@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 import type { TranslationKey } from "./types";
 
 /** English message dictionary. Must contain exactly the same keys as `zh`. */

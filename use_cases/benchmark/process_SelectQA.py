@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 # This script processes the original data from the SIR programs to
 # create JSON files containing the objectives for each test case, which will be used in the SelectQA.
 

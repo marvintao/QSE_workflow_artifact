@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * VerificationBadge component.
  * Renders a colored badge for the request's verification status

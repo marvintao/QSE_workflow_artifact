@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """LLM protocol definitions: the interface every client must satisfy, plus shared exception types and utilities."""
 
 import re

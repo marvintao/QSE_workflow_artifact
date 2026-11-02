@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * ChatMessage component.
  * Renders a single chat bubble; `kind` selects the styling and layout for user, agent and system messages.

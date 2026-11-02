@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Top-level package for quantum_workflow.
 
 Exposes build_pipeline_from_settings as the single factory that assembles

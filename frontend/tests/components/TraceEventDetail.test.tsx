@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * TraceEventDetail component tests: verifies that selecting different stage
  * records shows the corresponding fields, and that an empty-state hint is

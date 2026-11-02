@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Quantum building block: CNF clause -> QUBO penalty conversion.
 
 Boolean CNF (conjunctive-normal-form) clauses appear frequently in

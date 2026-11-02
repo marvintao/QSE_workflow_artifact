@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /** VerificationBadge unit tests. */
 import { describe, expect, it } from "vitest";
 import { screen } from "@testing-library/react";

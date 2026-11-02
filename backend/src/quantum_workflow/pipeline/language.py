@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Map language codes to human-readable language names used by the LLM.
 
 Pipeline stages call this when rendering prompts to convert the

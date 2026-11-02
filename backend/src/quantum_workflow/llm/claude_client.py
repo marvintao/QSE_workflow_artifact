@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Claude client: wraps the Anthropic SDK, exposing a synchronous call interface with exponential-backoff retry."""
 
 import json

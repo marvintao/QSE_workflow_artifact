@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 import { useI18n } from "../i18n/useI18n";
 import type { Lang } from "../i18n/types";
 

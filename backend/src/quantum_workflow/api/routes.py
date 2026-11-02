@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """API route definitions.
 
 Exposes three endpoints: submit request, query request, and fetch the

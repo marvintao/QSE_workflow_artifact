@@ -3,6 +3,8 @@ name = "quantum-workflow"
 version = "0.1.0"
 description = "Requirement-to-Project Planning for Quantum Workflows"
 requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "QJump.ai" }]
 dependencies = [
     "fastapi>=0.110",
     "uvicorn[standard]>=0.27",

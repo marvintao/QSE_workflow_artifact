@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * ChatPanel component.
  * Renders the full chat panel: message list, quick-example buttons and the bottom input form.

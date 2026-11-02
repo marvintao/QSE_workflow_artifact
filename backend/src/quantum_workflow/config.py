@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Global configuration module.
 
 Loads settings from a non-hidden `config` file via pydantic-settings.

@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * HTTP API client module.
  * Wraps all fetch calls against the backend /api endpoints, centralizing error handling and JSON parsing.

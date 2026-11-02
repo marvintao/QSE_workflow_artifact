@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Quantum building block: verified molecular Hamiltonians.
 
 Each entry is a qiskit SparsePauliOp built from published coefficients.

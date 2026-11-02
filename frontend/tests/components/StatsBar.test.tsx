@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * StatsBar component tests: verifies the four stat labels (stage count,
  * qubit count, computed value, wall-clock duration) render correctly,

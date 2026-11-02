@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Intent-parsing stage data models: structured intent extracted by the LLM from a raw user requirement."""
 
 from pydantic import BaseModel, Field

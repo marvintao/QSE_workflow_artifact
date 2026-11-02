@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * ChatPanel component tests: verifies message list rendering, input submission,
  * empty-input guard, loading-state disabling and quick-example button

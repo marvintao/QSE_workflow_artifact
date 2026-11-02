@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * PipelineBar component tests: verifies the 8-stage agentic pipeline labels
  * (including verify), completed state, running highlight, and the count text.

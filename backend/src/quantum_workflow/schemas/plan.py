@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Workflow-planning stage data models: the quantum-workflow DAG produced by the LLM and its feasibility assessment."""
 
 from typing import Literal

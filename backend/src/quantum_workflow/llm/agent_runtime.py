@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Agent runtime: a thin tool-loop on top of LLMClient.call_with_tools().
 
 Provides the Tool dataclass plus the run_agent() main loop. The runtime

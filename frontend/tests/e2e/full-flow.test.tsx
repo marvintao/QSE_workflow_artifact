@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * End-to-end integration tests: uses MSW interceptors to simulate the full
  * backend, covering the complete user journey (submit requirement → view

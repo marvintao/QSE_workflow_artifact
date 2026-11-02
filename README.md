@@ -83,3 +83,9 @@ reports/          Experiment trace DBs and per-run reports
 cd backend  && .venv/bin/pytest tests/unit -q
 cd frontend && npm test -- --run
 ```
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+Copyright (c) 2026 QJump.ai

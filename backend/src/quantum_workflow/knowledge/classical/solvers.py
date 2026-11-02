@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Classical reference solvers.
 
 A set of pure functions: take classical input, return a classical

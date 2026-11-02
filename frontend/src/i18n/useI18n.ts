@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 import { useContext } from "react";
 import { LanguageContext } from "./LanguageProvider";
 import type { Lang, TranslationKey } from "./types";

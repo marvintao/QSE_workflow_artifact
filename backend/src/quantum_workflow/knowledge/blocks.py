@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Access to validated numerical building blocks: load modules from `building_blocks/` as aux files for the sandbox.
 
 Building blocks are data (published exact numerical values), not

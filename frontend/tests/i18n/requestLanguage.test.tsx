@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * Verifies that when the frontend submits a request, the POST /request body
  * includes the currently-selected language field.

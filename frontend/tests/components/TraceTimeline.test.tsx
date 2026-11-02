@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * TraceTimeline component tests: verifies stage-list completeness, click-to-select
  * callback firing, and the currently-selected stage highlight style.

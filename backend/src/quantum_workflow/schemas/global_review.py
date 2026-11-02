@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Schema for the global_review stage output: does the codegen code implement the original requirement?"""
 
 from typing import Literal

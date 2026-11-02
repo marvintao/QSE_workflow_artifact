@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Pipeline stage: encode — decompose the full-scale problem into sub-problems that fit the feasible budget.
 
 Phase 1 is a single-LLM-call version (Phase 2 upgrades to a real agent

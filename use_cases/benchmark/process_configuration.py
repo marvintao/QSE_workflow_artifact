@@ -1,4 +1,7 @@
-﻿# This script processes the original configuration optimization benchmarks to
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
+# This script processes the original configuration optimization benchmarks to
 # create JSON files containing reproduced feature costs and CNF constraints.
 
 import json

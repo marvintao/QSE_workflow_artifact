@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * WorkflowDAG component tests: verifies DAG node rendering, the placeholder
  * shown when there is no workflow stage data, and that onNodeClick is fired

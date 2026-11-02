@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Dependency-injection factory module.
 
 Builds AgenticPipeline + TraceStore from a Settings instance. Each

@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """global_review stage: between codegen and execute, check whether the code satisfies the original requirement.
 
 Motivation: the codegen agent only sees the kernel spec, so it can

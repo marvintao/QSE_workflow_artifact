@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 import { describe, it, expect } from "vitest";
 import { zh } from "../../src/i18n/zh";
 import { en } from "../../src/i18n/en";

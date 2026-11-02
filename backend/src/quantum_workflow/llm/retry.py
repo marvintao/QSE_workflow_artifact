@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Retry helper: validate the LLM result and, on failure, retry once with the error attached."""
 
 from collections.abc import Callable

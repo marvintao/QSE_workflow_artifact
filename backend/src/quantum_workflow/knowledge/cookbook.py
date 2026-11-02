@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Qiskit 2.x API usage snippets: algorithm-agnostic library-API call examples.
 
 Injected into stage-4 codegen prompts to correct outdated API

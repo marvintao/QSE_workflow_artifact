@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * WorkflowPanel component tests: verifies the empty-state placeholder when
  * no trace is given, and the combined rendering of pipeline bar, DAG and

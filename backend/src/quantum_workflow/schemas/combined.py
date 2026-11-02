@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Combine-stage data models: aggregate N sub-results into a complete solution to the original problem."""
 
 from pydantic import BaseModel, Field

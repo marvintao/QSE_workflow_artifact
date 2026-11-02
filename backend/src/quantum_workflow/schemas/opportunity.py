@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Quantum-opportunity analysis stage data models.
 
 Output of stage 2: the problem decomposition plus the identified quantum

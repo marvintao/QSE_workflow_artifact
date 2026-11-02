@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * useRequest hook.
  * Wraps the async state machine for submitting a quantum workflow request to the backend,

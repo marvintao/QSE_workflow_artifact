@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * Application entry point.
  * Mounts the root App component onto the DOM node with id "root" and enables React strict mode.

@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * TraceEventDetail component.
  * Looks up the selected stage record by id in the stages array and renders its detail fields.

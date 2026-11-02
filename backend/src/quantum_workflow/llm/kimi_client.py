@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Kimi client: talks to Moonshot AI via its OpenAI-compatible interface, with retried synchronous calls."""
 
 import json

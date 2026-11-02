@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * DetailInspector component tests: verifies the right-hand detail panel
  * across three selection states — nothing selected, a DAG node selected,

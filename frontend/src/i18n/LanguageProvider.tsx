@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 import { createContext, useCallback, useMemo, useState, type ReactNode } from "react";
 import type { Lang } from "./types";
 

@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * TraceTimeline component.
  * Renders the unified stages array as a clickable execution timeline in stage order

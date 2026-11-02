@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """AWS Bedrock client: talks to models on Bedrock (Llama / Claude /
 Mistral, etc.) via the Converse API, with retried synchronous calls.
 

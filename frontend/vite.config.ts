@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 

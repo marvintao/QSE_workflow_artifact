@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 # This script processes the original data from the IGDec-QAOA benchmarks to
 # create JSON files containing the objectives for each test case.
 

@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Static safety check for generated code.
 
 Walks the AST of stage-4-generated code and blocks non-whitelisted

@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * Stage trace helper module.
  * The backend's `stages` array distinguishes pipeline stages by the `stage` field;

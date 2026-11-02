@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """SDK-native agent loop runner — used when codegen / verify takes the SDK path.
 
 Design: the caller provides a system prompt, a user prompt, and a list

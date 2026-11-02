@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """Pipeline stage: verify — real agent + 6 tools running the dual-gate verdict.
 
 Input: QuantumKernel + GeneratedCode.code + CombinedResult

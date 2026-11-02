@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /** Simplified Chinese translation dictionary. Its key set is the single source of truth for all translation keys across the app. */
 export const zh = {
   "app.title": "量子工作流平台",

@@ -1,3 +1,6 @@
+# Copyright (c) 2026 QJump.ai
+# SPDX-License-Identifier: MIT
+
 """FastAPI application factory module.
 
 Exposes `create_app` and `app_factory` entry points that build and

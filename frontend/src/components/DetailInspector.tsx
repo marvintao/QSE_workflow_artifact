@@ -1,3 +1,6 @@
+// Copyright (c) 2026 QJump.ai
+// SPDX-License-Identifier: MIT
+
 /**
  * DetailInspector component.
  * Right-hand inspector panel that renders details for the current selection (a DAG node or a timeline stage event).
